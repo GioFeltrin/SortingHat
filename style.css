@@ -12,3 +12,7 @@ body{
     background-image: radial-gradient(circle, orange,darkmagenta, black);
     }
 
+button{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
