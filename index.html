@@ -9,65 +9,101 @@
    
 </head>
 <body>
-  
+    
+ 
     <header>
-        <img src="styles/chapéu seletor 150.png" alt="chapéu seletor">
-        <h1> Chapéu Seletor</h1>
-        <h2> Qual será a sua casa em Hogwarts?</h2>  
-                     
+    <div id="symbol">
+    <img src="styles/symbol.png" alt="símbolo das relíquias da morte">
+    </div>
+    <h1> Chapéu Seletor </h1>
     </header>
+                     
     <Main>
+           
+        <h2> Qual será a sua casa em Hogwarts?</h2>  
 
     <h3> Responda as perguntas a seguir:</h3>
 
     <p> 1) Qual característica lhe chama mais atenção em alguém?</p>
     
-        <select name="escolha uma resposta" id=" cx de resposta">
-            <option value="A"> Bravura</option>
-            <option value="B"> Gentileza</option>
-            <option value="C"> inteligência</option>
-            <option value="D"> Ambição</option>
+        <select name="opcao" id="resposta">
+            <option id="grifi"> Bravura</option>
+            <option id="lufa"> Gentileza</option>
+            <option id="corvi"> inteligência</option>
+            <option id="sonse"> Ambição</option>
         </select>
-      
-   
+         
     <P> 2) Qual destes animais você mais gosta?</P>
-         <select name="escolha uma resposta" id=" cx de resposta">
-            <option value="A"> Leão</option>
-            <option value="B"> Texugo</option>
-            <option value="C"> Corvo</option>
-            <option value="D"> Serpete</option>
+        <select name="escolha uma resposta" >
+            <option> Leão</option>
+            <option> Texugo</option>
+            <option> Corvo</option>
+            <option> Serpete</option>
         </select>
 
     <p>3) Qual destes doces você mais gosta?</p>
-         <select name="escolha uma resposta" id=" cx de resposta">
-            <option value="A"> pudim</option>
-            <option value="B"> sorvete</option>
-            <option value="C"> gelatina</option>
-            <option value="D"> doces não são para mim</option>
+         <select name="escolha uma resposta" >
+            <option> pudim</option>
+            <option> sorvete</option>
+            <option> gelatina</option>
+            <option> doces não são para mim</option>
         </select>
     <p>4) Uma cor?</p>
-        <select name="escolha uma resposta" id=" cx de resposta">
-            <option value="A"> Vermelho</option>
-            <option value="B"> Amarelo</option>
-            <option value="C"> Azul</option>
-            <option value="D"> Verde</option>
+        <select name="escolha uma resposta" >
+            <option> Vermelho</option>
+            <option> Amarelo</option>
+            <option> Azul</option>
+            <option> Verde</option>
         </select>
    <p>5) Um lugar?</p>
-    <select name="escolha uma resposta" id=" cx de resposta">
-        <option value="A"> Praia</option>
-        <option value="B"> Cidade</option>
-        <option value="C"> Campo</option>
-        <option value="D"> Biblioteca</option>
-    </select> 
+        <select name="escolha uma resposta" >
+            <option> Praia</option>
+            <option> Cidade</option>
+            <option> Campo</option>
+            <option> Biblioteca</option>
+        </select>     
     <br>
-  
-    <Button> clique para saber sua casa</Button> <br>
+ <script>
+       /* let resposta = document.getElementById('resposta')
+        let grifinoria = document.getElementById('grifi')
+        let lufalufa = document.getElementById('lufa')
+        let corvinal = document.getElementById('corvi')
+        let sonserina = document.getElementById('sonse')
+
+        function clicar () {
+            if(resposta == grifinoria) { 
+                window.open ('grifinoria.html', '_blank')
+                console.log ('grifinória')
+            } else if (resposta == lufalufa) {
+                window.open ('lufa-lufa.html', '_blank')
+                console.log ('lufa')
+            } else if (resposta == corvinal) { 
+                window.open ('corvinal.html', '_blank')
+                console.log ('corvinal')
+            } else {
+                window.open ('sonseria.html', '_blank') 
+                console.log ('sonserina')}
+               }*/
+
+               
+               function clicar () {
+        const opcao = Array.from(document.querySelector("[name=opcao]").children)
+
+        options.forEach(c => {
+             console.log(teste);
+            })
+        }
+
+         </script>
+
+    <button onclick="clicar ()">
+        
+                SUA CASA É...
+       
+    </button>      
     
-    <audio preload="auto" autoplay>
-        <source src="audio/Harry_Potter_Theme_Song_Hedwigs_Theme.mp3" type="audio/mp3">
-    </audio>
     <footer>
-        produced by Giovanni Feltrin
+       Giovanni Feltrin
     </footer>
  
     </Main>

@@ -1,18 +1,54 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=My+Soul&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben&family=My+Soul&family=Rye&display=swap');
+
+*{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+   }
 
 body{
     text-align: center;
     background-size: auto;
     background-repeat: no-repeat;
-    font-family: 'Aladin', cursive;
+    font-family: 'Corben', Verdana, Tahoma, sans-serif;
     font-size: 20px;
-    color: ghostwhite;
-    background-image: radial-gradient(circle, orange,darkmagenta, black);
+    color: rgb(247, 154, 15);
+    background-color: rgb(114, 21, 133);
     }
 
-button{
-    margin-top: 25px;
-    margin-bottom: 50px;
+header{
+    background-color: black;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
 }
+
+button{
+
+    margin: 50px; 
+    padding: 10px;
+    font-size: 18pt;
+    font-family: aladin, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(29, 197, 29);
+    color: rgb(219, 183, 38);
+     
+    }
+
+footer{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
