@@ -8,104 +8,93 @@
     <title>Chapéu Seletor</title>
    
 </head>
-<body>
-    
+<body>  
+    <audio autoplay src="audio/Harry_Potter_Theme_Song_Hedwigs_Theme.mp3" loop></audio>
  
     <header>
-    <div id="symbol">
-    <img src="styles/symbol.png" alt="símbolo das relíquias da morte">
-    </div>
-    <h1> Chapéu Seletor </h1>
+        <div id="symbol">
+        <img src="styles/symbol.png" alt="símbolo das relíquias da morte">
+        </div>
+        <h1> Chapéu Seletor </h1>
     </header>
                      
     <Main>
            
         <h2> Qual será a sua casa em Hogwarts?</h2>  
 
-    <h3> Responda as perguntas a seguir:</h3>
+        <h3> Responda as perguntas a seguir:</h3>
 
-    <p> 1) Qual característica lhe chama mais atenção em alguém?</p>
-    
-        <select name="opcao" id="resposta">
-            <option id="grifi"> Bravura</option>
-            <option id="lufa"> Gentileza</option>
-            <option id="corvi"> inteligência</option>
-            <option id="sonse"> Ambição</option>
-        </select>
-         
-    <P> 2) Qual destes animais você mais gosta?</P>
-        <select name="escolha uma resposta" >
-            <option> Leão</option>
-            <option> Texugo</option>
-            <option> Corvo</option>
-            <option> Serpete</option>
-        </select>
-
-    <p>3) Qual destes doces você mais gosta?</p>
-         <select name="escolha uma resposta" >
-            <option> pudim</option>
-            <option> sorvete</option>
-            <option> gelatina</option>
-            <option> doces não são para mim</option>
-        </select>
-    <p>4) Uma cor?</p>
-        <select name="escolha uma resposta" >
-            <option> Vermelho</option>
-            <option> Amarelo</option>
-            <option> Azul</option>
-            <option> Verde</option>
-        </select>
-   <p>5) Um lugar?</p>
-        <select name="escolha uma resposta" >
-            <option> Praia</option>
-            <option> Cidade</option>
-            <option> Campo</option>
-            <option> Biblioteca</option>
-        </select>     
-    <br>
- <script>
-       /* let resposta = document.getElementById('resposta')
-        let grifinoria = document.getElementById('grifi')
-        let lufalufa = document.getElementById('lufa')
-        let corvinal = document.getElementById('corvi')
-        let sonserina = document.getElementById('sonse')
-
-        function clicar () {
-            if(resposta == grifinoria) { 
-                window.open ('grifinoria.html', '_blank')
-                console.log ('grifinória')
-            } else if (resposta == lufalufa) {
-                window.open ('lufa-lufa.html', '_blank')
-                console.log ('lufa')
-            } else if (resposta == corvinal) { 
-                window.open ('corvinal.html', '_blank')
-                console.log ('corvinal')
-            } else {
-                window.open ('sonseria.html', '_blank') 
-                console.log ('sonserina')}
-               }*/
-
-               
-               function clicar () {
-        const opcao = Array.from(document.querySelector("[name=opcao]").children)
-
-        options.forEach(c => {
-             console.log(teste);
-            })
-        }
-
-         </script>
-
-    <button onclick="clicar ()">
+        <p> 1) Qual característica lhe chama mais atenção em alguém?</p>
         
-                SUA CASA É...
-       
-    </button>      
+            <select id="resposta">
+                <option value="grifi"> Bravura</option>
+                <option value="lufa"> Gentileza</option>
+                <option value="corvi"> inteligência</option>
+                <option value="sonse"> Ambição</option>
+            </select>
+            
+        <P> 2) Qual destes animais você mais gosta?</P>
+            <select>
+                <option> Leão</option>
+                <option> Texugo</option>
+                <option> Corvo</option>
+                <option> Serpete</option>
+            </select>
+
+        <p>3) Qual destes doces você mais gosta?</p>
+            <select >
+                <option> pudim</option>
+                <option> sorvete</option>
+                <option> gelatina</option>
+                <option> doces não são para mim</option>
+            </select>
+        <p>4) Uma cor?</p>
+            <select>
+                <option> Vermelho</option>
+                <option> Amarelo</option>
+                <option> Azul</option>
+                <option> Verde</option>
+            </select>
+        <p>5) Um lugar?</p>
+            <select>
+                <option> Praia</option>
+                <option> Cidade</option>
+                <option> Campo</option>
+                <option> Biblioteca</option>
+            </select>     
+        <br>
+        
+        <script> 
+                    
+            function clicar (){
+            
+            let res = document.getElementById('resposta')
+                if(res.value === 'grifi') { 
+                    window.open ('grifinoria.html', '_blank')
+                    console.log ('grifinória')
+                } else if (res.value === 'lufa') {
+                    window.open ('lula-lufa.html', '_blank')
+                    console.log ('lufa')
+                } else if (res.value === 'corvi') { 
+                    window.open ('corvinal.html', '_blank')
+                    console.log ('corvinal')
+                } else {
+                    window.open ('sonserina.html', '_blank') 
+                    console.log ('sonserina')}
+            }
+        </script>
     
+        
+        <button  onclick="clicar ()">       
+
+            Clique aqui para saber sua casa
+        
+        </button>      
+    </Main>    
     <footer>
        Giovanni Feltrin
     </footer>
  
-    </Main>
+  
 </body>
 </html>
